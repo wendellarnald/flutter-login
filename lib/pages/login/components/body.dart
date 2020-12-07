@@ -30,8 +30,16 @@ class Body extends StatelessWidget {
 }
 
 class RoudedButton extends StatelessWidget {
+  final String text;
+  final Function press;
+  final Color color, textColor;
+
   const RoudedButton({
     Key key,
+    this.text,
+    this.press,
+    this.color,
+    this.textColor,
   }) : super(key: key);
 
   @override
