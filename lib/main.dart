@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/constants.dart';
-import 'package:flutter_login/pages/login/login.page.dart';
+import 'package:flutter_login/pages/welcome/login.page.dart';
 
 void main() => runApp(MyApp());
 
