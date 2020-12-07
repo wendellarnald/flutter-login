@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/pages/welcome/components/body.dart';
 
-class LoginPage extends StatelessWidget {
+class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login/components/rounded_button.dart';
+import 'package:flutter_login/components/rounded.button.dart';
 import 'package:flutter_login/constants.dart';
+import 'package:flutter_login/pages/login/login.page.dart';
 import 'package:flutter_login/pages/welcome/components/background.dart';
-import 'package:flutter_login/pages/welcome/login.page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
