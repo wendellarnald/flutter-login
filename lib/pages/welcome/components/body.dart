@@ -44,7 +44,7 @@ class Body extends StatelessWidget {
               },
             ),
             RoudedButton(
-              text: "SING",
+              text: "LOGIN",
               color: primaryLighColor,
               textColor: Colors.black,
               press: () {},
