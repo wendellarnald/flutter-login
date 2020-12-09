@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login/components/rounded.button.dart';
 import 'package:flutter_login/constants.dart';
 import 'package:flutter_login/pages/login/login.page.dart';
-import 'package:flutter_login/pages/welcome/components/background.dart';
+import 'package:flutter_login/pages/welcome/components/background.components.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
@@ -17,7 +17,7 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WELCOME TO DEV",
+              "WELCOME DEV",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(
