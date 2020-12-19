@@ -28,7 +28,9 @@ class Body extends StatelessWidget {
           ),
           TextFieldContainer(
             child: TextField(
-              decoration: InputDecoration(hintText: "Your Email"),
+              decoration: InputDecoration(
+                hintText: "Your Email",
+              ),
             ),
           ),
         ],
