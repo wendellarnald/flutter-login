@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login/components/rounded.button.dart';
 import 'package:flutter_login/constants.dart';
 import 'package:flutter_login/pages/login/login.page.dart';
+import 'package:flutter_login/pages/signup/signup.page.dart';
 import 'package:flutter_login/pages/welcome/components/background.components.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -44,10 +45,17 @@ class Body extends StatelessWidget {
               },
             ),
             RoudedButton(
-              text: "LOGIN",
+              text: "SIGN UP",
               color: primaryLighColor,
               textColor: Colors.black,
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SignupPage(),
+                  ),
+                );
+              },
             ),
           ],
         ),
