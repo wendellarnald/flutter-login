@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login/components/rounded.button.dart';
 import 'package:flutter_login/components/rounded.input.dart';
+import 'package:flutter_login/components/rounded.password.dart';
+import 'package:flutter_login/components/text.field.dart';
+import 'package:flutter_login/constants.dart';
 import 'package:flutter_login/pages/login/components/background.components.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -32,6 +36,14 @@ class Body extends StatelessWidget {
           RoundedInputField(
             hintText: "Your Email",
             onChanged: (value) {},
+          ),
+          RoundedPasswordField(
+            hintText: "Password",
+            onChanged: (value) {},
+          ),
+          RoudedButton(
+            text: "LOGIN",
+            press: () {},
           ),
         ],
       ),
