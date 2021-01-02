@@ -5,7 +5,6 @@ class RoudedButton extends StatelessWidget {
   final String text;
   final Function press;
   final Color color, textColor;
-
   const RoudedButton({
     Key key,
     this.text,
@@ -23,10 +22,7 @@ class RoudedButton extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(29),
         child: FlatButton(
-          padding: EdgeInsets.symmetric(
-            vertical: 20,
-            horizontal: 40,
-          ),
+          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
           color: color,
           onPressed: press,
           child: Text(
