@@ -45,6 +45,17 @@ class Body extends StatelessWidget {
             text: "LOGIN",
             press: () {},
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                "Don't have an Account? ",
+                style: TextStyle(
+                  color: primaryColor,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
