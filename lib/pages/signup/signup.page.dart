@@ -4,12 +4,21 @@ class SignupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Body(),
+      body: Body(
+        child: Column(),
+      ),
     );
   }
 }
 
 class Body extends StatelessWidget {
+  final Widget child;
+
+  const Body({
+    Key key,
+    @required this.child,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -35,6 +44,7 @@ class Body extends StatelessWidget {
               width: size.width * 0.25,
             ),
           ),
+          child,
         ],
       ),
     );
