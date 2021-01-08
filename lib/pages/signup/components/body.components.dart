@@ -47,6 +47,44 @@ class Body extends StatelessWidget {
             RoundedPasswordField(
               onChanged: (value) {},
             ),
+            RoudedButton(
+              text: "SIGNUP",
+              press: () {},
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            AlreadyHaveAnAccountCheck(
+              login: false,
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginPage();
+                    },
+                  ),
+                );
+              },
+            ),
+            OrDivider(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                SocialIcon(
+                  iconSrc: "assets/icons/facebook.svg",
+                  press: () {},
+                ),
+                SocialIcon(
+                  iconSrc: "assets/icons/twitter.svg",
+                  press: () {},
+                ),
+                SocialIcon(
+                  iconSrc: "assets/icons/google-plus.svg",
+                  press: () {},
+                ),
+              ],
+            ),
           ],
         ),
       ),
