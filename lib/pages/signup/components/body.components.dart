@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login/components/already.have.account.dart';
+import 'package:flutter_login/components/rounded.button.dart';
+import 'package:flutter_login/components/rounded.input.dart';
+import 'package:flutter_login/components/rounded.password.dart';
+import 'package:flutter_login/constants.dart';
+import 'package:flutter_login/pages/login/login.page.dart';
+import 'package:flutter_login/pages/signup/components/background.components.dart';
+import 'package:flutter_login/pages/signup/components/ordivider.components.dart';
+import 'package:flutter_login/pages/signup/components/social.icon.components.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
   final Widget child;
@@ -10,46 +20,35 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Background(
-      child: Column(),
-    );
-  }
-}
-
-class Background extends StatelessWidget {
-  final Widget child;
-  const Background({
-    Key key,
-    this.child,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
-      height: size.height,
-      width: double.infinity,
-      child: Stack(
-        alignment: Alignment.center,
-        children: <Widget>[
-          Positioned(
-            top: 0,
-            left: 0,
-            child: Image.asset(
-              "assets/images/signup_top.png",
-              width: size.width * 0.3,
+    return Background(
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "SIGNUP",
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
-          ),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            child: Image.asset(
-              "assets/images/main_bottom.png",
-              width: size.width * 0.25,
+            SizedBox(
+              height: size.height * 0.02,
             ),
-          ),
-          child,
-        ],
+            SvgPicture.asset(
+              "assets/icons/signup.svg",
+              height: size.height * 0.3,
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            RoundedInputField(
+              hintText: "Your Email",
+              onChanged: (value) {},
+            ),
+            RoundedPasswordField(
+              onChanged: (value) {},
+            ),
+          ],
+        ),
       ),
     );
   }
